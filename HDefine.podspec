@@ -6,6 +6,7 @@ s.name         = "HDefine"
 s.version      = "1.0"
 s.summary      = "写了一些常用的宏定义"
 s.description  = <<-DESC
+一些常用的宏定义
 DESC
 
 s.homepage     = "https://github.com/hare27/HDefine"
