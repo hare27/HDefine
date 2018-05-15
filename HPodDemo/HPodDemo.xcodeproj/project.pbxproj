@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B60F201BEAD497CA39BE2FA /* libPods-HPodDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B529B02392E645F6E90C51A /* libPods-HPodDemo.a */; };
 		8184862520A0356100A21476 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8184862420A0356100A21476 /* AppDelegate.m */; };
 		8184862820A0356100A21476 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8184862720A0356100A21476 /* ViewController.m */; };
 		8184862B20A0356100A21476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8184862920A0356100A21476 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B529B02392E645F6E90C51A /* libPods-HPodDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HPodDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8184862020A0356100A21476 /* HPodDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HPodDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8184862320A0356100A21476 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8184862420A0356100A21476 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		8184862F20A0356200A21476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8184863120A0356200A21476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8184863220A0356200A21476 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9720AD759CF06CD3D31902A7 /* Pods-HPodDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPodDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HPodDemo/Pods-HPodDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B89EC8F354019F53CFFD8C99 /* Pods-HPodDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPodDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HPodDemo/Pods-HPodDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B60F201BEAD497CA39BE2FA /* libPods-HPodDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CCC681A5CBF06EEAD150E04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9720AD759CF06CD3D31902A7 /* Pods-HPodDemo.debug.xcconfig */,
+				B89EC8F354019F53CFFD8C99 /* Pods-HPodDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8184861720A0356100A21476 = {
 			isa = PBXGroup;
 			children = (
 				8184862220A0356100A21476 /* HPodDemo */,
 				8184862120A0356100A21476 /* Products */,
+				0CCC681A5CBF06EEAD150E04 /* Pods */,
+				D494EB5134CB9F90D5527FEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,14 @@
 			path = HPodDemo;
 			sourceTree = "<group>";
 		};
+		D494EB5134CB9F90D5527FEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B529B02392E645F6E90C51A /* libPods-HPodDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8184863620A0356200A21476 /* Build configuration list for PBXNativeTarget "HPodDemo" */;
 			buildPhases = (
+				DD50BDE7AC35E7EF3188392A /* [CP] Check Pods Manifest.lock */,
 				8184861C20A0356100A21476 /* Sources */,
 				8184861D20A0356100A21476 /* Frameworks */,
 				8184861E20A0356100A21476 /* Resources */,
@@ -135,6 +160,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD50BDE7AC35E7EF3188392A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HPodDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8184861C20A0356100A21476 /* Sources */ = {
@@ -281,14 +327,12 @@
 		};
 		8184863720A0356200A21476 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9720AD759CF06CD3D31902A7 /* Pods-HPodDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HPodDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ss.HPodDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,14 +341,12 @@
 		};
 		8184863820A0356200A21476 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B89EC8F354019F53CFFD8C99 /* Pods-HPodDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HPodDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ss.HPodDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

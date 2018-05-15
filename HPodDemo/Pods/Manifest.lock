@@ -1,0 +1,21 @@
+PODS:
+  - HDefine (1.0)
+
+DEPENDENCIES:
+  - HDefine (from `/Users/ios/Documents/HKit/HDefine`)
+
+EXTERNAL SOURCES:
+  HDefine:
+    :git: "/Users/ios/Documents/HKit/HDefine"
+
+CHECKOUT OPTIONS:
+  HDefine:
+    :commit: c668024701759891f64a696109a2af7a043655f3
+    :git: "/Users/ios/Documents/HKit/HDefine"
+
+SPEC CHECKSUMS:
+  HDefine: 03f14cbe7a6f095e3f2c9f5823314c935cf07ab0
+
+PODFILE CHECKSUM: 2f94d010a14a251dee00294d27877b5468e114bc
+
+COCOAPODS: 1.5.0

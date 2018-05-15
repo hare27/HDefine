@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <HDefine/HDefine.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    HDLog(@"");
+    HDLog(@"%d",HDRand256);
+    HDLog(@"%@",HDRGBColor(5, 5, 5));
+    HDLog(@"%lf",HDScreenW);
+    HDLog(@"%lf",HDScreenH);
+    
+    
     return YES;
 }
 

@@ -34,3 +34,6 @@
 
 /** 屏幕高*/
 #define HDScreenH [UIScreen mainScreen].bounds.size.height
+
+/** 顶部*/
+#define HDTopH (self.navigationController?CGRectGetMaxY(self.navigationController.navigationBar.frame):0)
